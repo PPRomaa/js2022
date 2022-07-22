@@ -40,13 +40,13 @@
     let c = true;
     console.log(typeof c);
 
-    let years = "2022";
-
     let inputdata = prompt(middlename);
-    console.log(!!inputdata);
+    console.log(inputdata);
 
     let inputdata2 = prompt(lastname);
-    console.log(!!inputdata2);
+    console.log(inputdata2);
+
+    let years = '2022';
 
     let inputdata3 = prompt(years);
-    console.log(!!inputdata3);
+    console.log(+inputdata3);
