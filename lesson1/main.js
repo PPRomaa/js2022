@@ -40,13 +40,11 @@
     let c = true;
     console.log(typeof c);
 
-    let inputdata = prompt(middlename);
+    let inputdata = prompt( 'Enter your first name');
     console.log(inputdata);
 
-    let inputdata2 = prompt(lastname);
+    let inputdata2 = prompt('Enter your last name');
     console.log(inputdata2);
 
-    let years = '2022';
-
-    let inputdata3 = prompt(years);
-    console.log(+inputdata3);
+    let age = +prompt('Enter your age');
+    console.log(age);
