@@ -43,30 +43,39 @@ let book = {
     title: 'A Song of Ice and Fire',
     pageCount: 1,
     genre: 'Epic fantasy',
-    authors: {
-        name: 'George R. R. Martin',
-        age: 73,
-    }}
+    authors: [
+        {
+            name: 'George R. R. Martin',
+            age: 73,
+        }
+    ]
+}
 console.log(book);
 
 let book2 = {
     title: 'Journey to the Center of the Earth',
     pageCount: 1,
     genre: 'Science fiction, adventure novel',
-    authors: {
+    authors: [
+        {
         name: 'Jules Verne',
         age: 77,
-    }}
+        }
+    ]
+}
 console.log(book2);
 
 let book3 = {
     title: 'The Mysterious Island',
     pageCount: 1,
     genre: 'Adventure novel, Science fiction',
-    authors: {
+    authors: [
+        {
         name: 'Jules Verne',
         age: 77,
-    }}
+        }
+    ]
+}
 console.log(book3);
 
 
