@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrap{
+    margin: 0 auto;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.post-card{
+    flex: 15%;;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}

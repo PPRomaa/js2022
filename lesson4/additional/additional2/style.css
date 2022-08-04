@@ -1,0 +1,17 @@
+*{
+    box-sizing:  border-box;
+    margin: 0;
+    padding: 0;
+}
+.users-box{
+    margin: 0 auto;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.user-block{
+    flex: 35%;;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
