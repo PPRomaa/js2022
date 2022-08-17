@@ -25,40 +25,40 @@
 // }
 // }
 
-class UserInfo {
-    constructor(id,name,username,email,adressStreet,adressSuite,adressCity,adressZipcode,adressGeoLat,adressGeoLng,
-                phone,website,companyName,companyCatchPhrase,companyBs) {
-        this.id = id;
-        this.name = name;
-        this.username = username;
-        this.email = email;
-        this.adress = {
-            street: adressStreet,
-            suite: adressSuite,
-            city: adressCity,
-            zipcode: adressZipcode,
-            geo: {
-                lat: adressGeoLat,
-                lng: adressGeoLng
-            }
-        }
-        this.phone = phone;
-        this.website = website;
-        this.company = {
-            name: companyName,
-            catchPhrase:companyCatchPhrase,
-            bs: companyBs,
-        }
-    }
-}
-
-const infoUser = new UserInfo(1, 'Leanne Graham', 'Bret','Sincere@april.biz','Kulas Light',
-    'Apt. 556','Gwenborough','92998-3874','-37.3159',
-    '81.1496','1-770-736-8031 x56442','hildegard.org','Romaguera-Crona',
-    'Multi-layered client-server neural-net','harness real-time e-markets')
-
-
-console.log(infoUser)
+// class UserInfo {
+//     constructor(id,name,username,email,adressStreet,adressSuite,adressCity,adressZipcode,adressGeoLat,adressGeoLng,
+//                 phone,website,companyName,companyCatchPhrase,companyBs) {
+//         this.id = id;
+//         this.name = name;
+//         this.username = username;
+//         this.email = email;
+//         this.adress = {
+//             street: adressStreet,
+//             suite: adressSuite,
+//             city: adressCity,
+//             zipcode: adressZipcode,
+//             geo: {
+//                 lat: adressGeoLat,
+//                 lng: adressGeoLng
+//             }
+//         }
+//         this.phone = phone;
+//         this.website = website;
+//         this.company = {
+//             name: companyName,
+//             catchPhrase:companyCatchPhrase,
+//             bs: companyBs,
+//         }
+//     }
+// }
+//
+// const infoUser = new UserInfo(1, 'Leanne Graham', 'Bret','Sincere@april.biz','Kulas Light',
+//     'Apt. 556','Gwenborough','92998-3874','-37.3159',
+//     '81.1496','1-770-736-8031 x56442','hildegard.org','Romaguera-Crona',
+//     'Multi-layered client-server neural-net','harness real-time e-markets')
+//
+//
+// console.log(infoUser)
 
 
 // -  Створити функцію конструктор / клас  який описує об'єкт тегу
@@ -70,16 +70,109 @@ console.log(infoUser)
 // -назву атрибуту
 // -опис дії атрибуту
 // інформацію брати з htmlbook.ru
-//
+
+
+class InfoObject {
+    constructor(titleoftag,action,titleOfAttr,actionOfAttr,titleOfAttrTwo,actionOfAttrTwo) {
+        this.titleoftag = titleoftag;
+        this.action = action;
+        this.atribute = {
+            name: titleOfAttr,
+            atribute: actionOfAttr,
+            secondname: titleOfAttrTwo,
+            secondatribute: actionOfAttrTwo,
+        }
+    }
+}
+
 // Таким чином описати теги
 // -a
+
+// const aTag = new InfoObject('Тег <a>','Тег <a> является одним из важных элементов HTML ' +
+//     'и предназначен для создания ссылок. В зависимости от присутствия атрибутов name или href тег <a> ' +
+//     'устанавливает ссылку или якорь. Якорем называется закладка внутри страницы, которую можно ' +
+//     'указать в качестве цели ссылки. При использовании ссылки, которая указывает на якорь, ' +
+//     'происходит переход к закладке внутри веб-страницы.', 'accesskey','Активация ссылки' +
+//     ' с помощью комбинации клавиш.', 'coords','Устанавливает координаты активной области.')
+// console.log(aTag)
+
 // -div
+
+// const divAtribute = new InfoObject('Тег <div>','Элемент <div> является блочным элементом и ' +
+//     'предназначен для выделения фрагмента документа с целью изменения вида содержимого. Как правило, ' +
+//     'вид блока управляется с помощью стилей. Чтобы не описывать каждый раз стиль внутри тега, можно выделить' +
+//     ' стиль во внешнюю таблицу стилей, а для тега добавить атрибут class или id с именем селектора.',
+//     'align','Задает выравнивание содержимого тега <div>.','title',
+//     'Добавляет всплывающую подсказку к содержимому.')
+// console.log(divAtribute)
+
 // -h1
+
+// const h1Atribute = new InfoObject('Тег <h1>','HTML предлагает шесть заголовков разного ' +
+//     'уровня, которые показывают относительную важность секции, расположенной после заголовка. ' +
+//     'Так, тег <h1> представляет собой наиболее важный заголовок первого уровня, а тег <h6> служит' +
+//     ' для обозначения заголовка шестого уровня и является наименее значительным. По умолчанию, заголовок' +
+//     ' первого уровня отображается самым крупным шрифтом жирного начертания, заголовки последующего уровня по' +
+//     ' размеру меньше. Теги <h1>,...,<h6> относятся к блочным элементам, они всегда начинаются с новой строки,' +
+//     ' а после них другие элементы отображаются на следующей строке. Кроме того, перед заголовком и после него ' +
+//     'добавляется пустое пространство.','align','Определяет выравнивание заголовка.')
+// console.log(h1Atribute)
+
 // -span
+
+// const spanAtr = new InfoObject('Тег <span>','Тег <span> предназначен для определения' +
+//     ' строчных элементов документа. В отличие от блочных элементов, таких как <table>, <p> или <div>,' +
+//     ' с помощью тега <span> можно выделить часть информации внутри других тегов и установить для нее свой стиль.' +
+//     ' Например, внутри абзаца (тега <p>) можно изменить цвет и размер первой буквы, если добавить начальный' +
+//     ' и конечный тег <span> и определить для него стиль текста. Чтобы не описывать каждый раз стиль внутри тега,' +
+//     ' можно выделить стиль во внешнюю таблицу стилей, а для тега добавить атрибут class или id с именем селектора.',
+//     'Для этого тега доступны универсальные атрибуты и события.')
+// console.log(spanAtr)
+
 // -input
+
+// const inputAtr = new InfoObject('Тег <input>','Тег <input> является одним из разносторонних ' +
+//     'элементов формы и позволяет создавать разные элементы интерфейса и обеспечить взаимодействие с пользователем.' +
+//     ' Главным образом <input> предназначен для создания текстовых полей, различных кнопок, переключателей и флажков.' +
+//     ' Хотя элемент <input> не требуется помещать внутрь контейнера <form>, определяющего форму, но ' +
+//     'если введенные пользователем данные должны быть отправлены на сервер, где их обрабатывает серверная программа,' +
+//     ' то указывать <form> обязательно. То же самое обстоит и в случае обработки данных с помощью клиентских' +
+//     ' приложений, например, скриптов на языке JavaScript.','accept','Устанавливает фильтр на ' +
+//     'типы файлов, которые вы можете отправить через поле загрузки файлов.')
+// console.log(inputAtr)
+
 // -form
+
+// const formAtr = new InfoObject('Тег <form>','Тег <form> устанавливает форму на веб-странице.' +
+//     ' Форма предназначена для обмена данными между пользователем и сервером. Область применения форм' +
+//     ' не ограничена отправкой данных на сервер, с помощью клиентских скриптов можно получить доступ' +
+//     ' к любому элементу формы, изменять его и применять по своему усмотрению.','accept-charset',
+//     'Устанавливает кодировку, в которой сервер может принимать и обрабатывать данные.')
+// console.log(formAtr)
+
 // -option
+
+// const optionAtr = new InfoObject('Тег <option>','Тег <option> определяет отдельные пункты ' +
+//     'списка, создаваемого с помощью контейнера <select>. Ширина списка определяется самым широким ' +
+//     'текстом, указанным в теге <option>, а также может изменяться с помощью стилей. Если планируется' +
+//     ' отправлять данные списка на сервер, то требуется поместить элемент <select> внутрь формы.' +
+//     ' Это также необходимо, когда к данным списка идет обращение через скрипты.','disabled',
+//     'Заблокировать для доступа элемент списка.')
+// console.log(optionAtr)
+
 // -select
+
+const selectAtr = new InfoObject('Тег <select>','Тег <select> позволяет создать элемент' +
+    ' интерфейса в виде раскрывающегося списка, а также список с одним или множественным выбором,' +
+    ' как показано далее. Конечный вид зависит от использования атрибута size тега <select>, который' +
+    ' устанавливает высоту списка. Ширина списка определяется самым широким текстом, указанным в теге <option>,' +
+    ' а также может изменяться с помощью стилей. Каждый пункт создается с помощью тега <option>, который должен' +
+    ' быть вложен в контейнер <select>. Если планируется отправлять данные списка на сервер, то требуется поместить ' +
+    'элемент <select> внутрь формы. Это также необходимо, когда к данным списка идет обращение через скрипты.',
+    'accesskey','Позволяет перейти к списку с помощью некоторого сочетания клавиш.')
+console.log(selectAtr)
+
+
 // Приклад результуючого об'єкту
 // {
 //     titleOfTag: 'area',
