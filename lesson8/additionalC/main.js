@@ -36,7 +36,7 @@ function UserCard (key,balance = 100,transactionlimit = 100,historylogs= []){
                 balance -= cash * 1.05;
                 anotherCard.putCredits(cash);
                 addhistoryLogs('Withdrawal of credits', cash);
-            }else console.error('Перевищейний ліміт, або недостатньо коштів, Будьласка поповніть ваш рахунок :)')
+            }else console.error('Перевищейний ліміт, або недостатньо коштів, Будь-ласка поповніть ваш рахунок :)')
         }
     }
 }
