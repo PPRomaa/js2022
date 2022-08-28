@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+
+.userBlock{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+
+    border: 1px black solid;
+    border-radius: 15px;
+}
+
+.block,.commentTittle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.blockd{
+    border: 1px darkcyan solid;
+}
+
+.blockk{
+    display: grid;
+}
+
+.blockUser{
+    margin-top: 32px;
+    text-align: center;
+}
+
+.block_p{
+    margin: 20px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+.block_H{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    padding: 5px;
+    border-bottom: 1px black solid;
+    border-radius: 10px;
+}
+
+.item{
+    margin: 10px;
+}
+
+.button{
+    background: lightblue;
+    border: black 1px solid;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.btn,.buttn{
+    background: lightblue;
+    width: 90%;
+    font-size: 13px;
+    border-radius: 15px;
+}
+
+.btn:hover,.button:hover,.buttn:hover{
+    background: cornflowerblue;
+}
+
+.title_posts{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5,1fr);
+}
+.li_title{
+    display: grid;
+    grid-gap: 10px;
+}
+
+.commentsUlList{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+}
+
